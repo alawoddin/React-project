@@ -1,54 +1,18 @@
 
-// import Footer from './component/Footer';
-// import Header from './component/Header';
-// import Contact from './component/Contact';
-// import Hero from './component/Hero';
-
-const LoginStatusBtn= (status) => {
-  if(status) {
-    return <button>Logout</button>
-  }else {
-    return <button>Login</button>
-  }
-}
 
 const App = () => {
-  return (
-    <div>
-      <h1>login status </h1>
-      {LoginStatusBtn(false)}
-    </div>
-  )
+
+  const status = true;
+
+  switch (status) {
+    case true:
+      return <button>login</button>
+    case false: 
+      return <button>logout</button>
+      default:
+        return null
+  }
+
 }
 
-export default App;
-
-// const App = () => {
-
-//   // let status = true;
-//   let status = false;
-
-//   if(status == true) {
-
-//       return (
- 
-//     <div>
-//       <h1>Login Status</h1>
-//       <button>Logout</button>
-//     </div>
-//   );
-// }
-//   else {
-//     return (
-//       <div>
-//         <h1>login Status</h1>
-//         <button>login</button>
-//       </div>
-//     )
-//   }
-
-//   }
-
-
-// export default App;
-
+export default App
