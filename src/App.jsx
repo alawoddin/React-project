@@ -2,16 +2,12 @@
 
 const App = () => {
 
-  const status = true;
 
   return (
     <div>
-      {
-        status ? 
-        <button>login</button>
-        : 
-        <button>logout</button>
-      }
+     <button onClick={() => {
+      alert ("Button clicked!");
+     }}>Submit</button>
     </div>
   )
 
