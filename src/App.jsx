@@ -1,14 +1,21 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import About from "./pages/About"
 
 
 const App = () => {
 
-  const Demo = () => {
-    alert('Hello, World!');
-  }
+ 
 
   return (
     <div>
-      <button onClick={Demo}>submit</button>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+
+      </Routes>
+      </BrowserRouter>
     </div>
   )
 
