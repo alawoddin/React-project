@@ -1,25 +1,21 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
-import About from "./pages/About"
+import { useRef } from "react"
 
 
 const App = () => {
+   let myHeadLine = useRef();
 
- 
+    const change = () => {
+      myHeadLine.current.innerText = "hello world changed"
+    }
 
   return (
     <div>
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-
-      </Routes>
-      </BrowserRouter>
+      <h1 ref={myHeadLine}>
+        hello world 
+      </h1>
+      <button onClick={change}>click me</button>
     </div>
   )
-
-
 }
 
 export default App
