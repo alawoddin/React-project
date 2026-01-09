@@ -1,22 +1,22 @@
-# React-project
-this the React project for build the film website with react
+# 🎬 React Film Website
+
+This is a React project built to create a film/movie website.
+The project supports development mode, production build, and routing.
+
+---
+
+## 📦 Install Project Dependencies
+
+```bash
+npm install
+
+1 , npm run dev
+
+2 , npm -v
+npx -v
 
 
-<!-- for install the react project -->
+3 , npm install react-dom react-router-dom
 
 
-npm run dev
-
-
-<!-- for check the version -->
-
-npm --v
-npx --v
-
-<!-- for ready to host -->
-npm run build
-
-
-<!-- for install the react-dom -->
-
-npm react-dom for install the route
+4 , npm run build
