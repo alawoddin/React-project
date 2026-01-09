@@ -1,19 +1,12 @@
-import { useRef } from "react"
-
+import React from 'react'
+import Home from './pages/Home'
 
 const App = () => {
-   let myHeadLine = useRef();
-
-    const change = () => {
-      myHeadLine.current.innerText = "hello world changed"
-    }
-
   return (
     <div>
-      <h1 ref={myHeadLine}>
-        hello world 
-      </h1>
-      <button onClick={change}>click me</button>
+
+      <Home/>
+      
     </div>
   )
 }

@@ -1,13 +1,14 @@
-import Menu from "../component/Menu"
-
+import React from 'react'
+import Services from './Services'
+import Brand from './Brand'
 
 const About = () => {
-    return (
-        <div>
-            <Menu></Menu>
-            <h1>this is the about page</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Services/>
+      <Brand/>
+    </div>
+  )
 }
 
 export default About
