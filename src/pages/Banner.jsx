@@ -39,7 +39,7 @@ const Banner = () => {
             <div className="col-lg-6 mb-0 d-flex align-items-center">
               <div className="text-align-left align-self-center">
                 <h1 className="h1 text-success">
-                  <b>Zay</b> eCommerce
+                  <b>alawoddin</b> eCommerce
                 </h1>
                 <h3 className="h2">Tiny and Perfect eCommerce Template</h3>
                 <p>
